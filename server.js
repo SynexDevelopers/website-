@@ -180,6 +180,10 @@ app.post('/api/order', submissionLimiter, async (req, res) => {
 });
 
 app.get('*', (req, res) => {
+  if (path.extname(req.path)) {
+    return res.status(404).send('Not Found');
+  }
+
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 

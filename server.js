@@ -21,7 +21,7 @@ app.use(helmet({
 }));
 app.use(express.json({ limit: '50kb' }));
 app.use(express.urlencoded({ extended: false, limit: '50kb' }));
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 const submissionLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -179,13 +179,7 @@ app.post('/api/order', submissionLimiter, async (req, res) => {
   }
 });
 
-app.get('*', (req, res) => {
-  if (path.extname(req.path)) {
-    return res.status(404).send('Not Found');
-  }
-
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+app.use((req, res) => { res.status(404).type('html').send('<h1>Page not found</h1><p><a href="/">Return to Synex Developers</a></p>'); });
 
 app.listen(port, () => {
   console.log(`Synex Developers server running at http://localhost:${port}`);

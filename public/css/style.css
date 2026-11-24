@@ -2699,3 +2699,4 @@ form.is-submitted .form-fields { display: none; }
 .connect-social svg { width: 19px; height: 19px; }
 
 @media (max-width: 560px) { .connect-layout { flex-direction: column; text-align: center; } }
+.projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin:32px 0}.project-card{padding:32px}.project-card p{margin:20px 0;line-height:1.7}.project-features{padding-left:24px;margin:24px 0 40px}.project-features li{padding:8px 0}.projects-grid+.section-head{margin-top:32px}@media(max-width:700px){.projects-grid{grid-template-columns:1fr}.project-card{padding:24px}}

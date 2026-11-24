@@ -1,0 +1,10 @@
+# Synex Developers
+
+Business websites, software and automation. Contact: synexdevelopers@gmail.com.
+
+## Projects
+- [Relay Cloud](https://synexdevelopers.vercel.app/relay-cloud.html): centrally hosted electrical supply planning with private company workspaces.
+- [Relay Offline](https://synexdevelopers.vercel.app/relay-offline.html): shared Ubuntu office server, local PostgreSQL, Windows/browser clients. Initial activation and staff approval need connectivity; approved users work over LAN within their licence term.
+- [Contact](https://synexdevelopers.vercel.app/contact.html): request a demonstration and confirm hosting, installation scope and pricing.
+
+These are Synex-built products, not claimed client engagements. No customer data or measured results are published.

@@ -142,3 +142,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Preserve project context when a visitor requests a demonstration.
+document.addEventListener('DOMContentLoaded', function () {
+  var project = new URLSearchParams(location.search).get('project');
+  var names = {'relay-cloud': 'Relay Cloud demonstration', 'relay-offline': 'Relay Offline installation'};
+  var subject = document.getElementById('cSubject');
+  if (subject && names[project] && !subject.value) subject.value = names[project];
+});

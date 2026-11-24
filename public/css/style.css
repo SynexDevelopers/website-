@@ -2700,3 +2700,15 @@ form.is-submitted .form-fields { display: none; }
 
 @media (max-width: 560px) { .connect-layout { flex-direction: column; text-align: center; } }
 .projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin:32px 0}.project-card{padding:32px}.project-card p{margin:20px 0;line-height:1.7}.project-features{padding-left:24px;margin:24px 0 40px}.project-features li{padding:8px 0}.projects-grid+.section-head{margin-top:32px}@media(max-width:700px){.projects-grid{grid-template-columns:1fr}.project-card{padding:24px}}
+
+/* Shared header geometry and readable project layouts. */
+.navbar .container{min-height:88px;height:auto;padding-top:10px;padding-bottom:10px;gap:24px}
+.navbar .brand{flex:0 0 auto;gap:10px;white-space:nowrap;font-size:17px;line-height:1.2}
+.navbar .brand img{width:88px;height:64px;object-fit:cover;object-position:50% 50%;flex-shrink:0}
+.navbar .nav-links{align-items:center;gap:24px;margin-left:auto}
+.navbar .nav-links a{white-space:nowrap;line-height:1.4}
+.navbar .nav-right{flex-shrink:0}.project-card{display:flex;flex-direction:column;align-items:flex-start}.project-card .btn{margin-top:auto}.project-card p{flex:1}.project-features{max-width:70ch}.hero-desc{max-width:65ch;overflow-wrap:break-word}
+@media(max-width:1100px){.navbar .container{gap:14px}.navbar .nav-links{gap:16px}.navbar .brand{font-size:15px}.navbar .brand img{width:70px;height:54px}}
+@media(max-width:900px){.navbar .nav-links{align-items:flex-start;gap:0;top:84px}.navbar .container{min-height:84px}.navbar .nav-right{margin-left:auto}.navbar .brand{font-size:16px}}
+@media(max-width:400px){.navbar .brand{font-size:14px;gap:6px}.navbar .brand img{width:60px;height:50px}}
+@media(prefers-reduced-motion:reduce){.navbar,.nav-links,.btn,.project-card{transition:none!important;animation:none!important}}
